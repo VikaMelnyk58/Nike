@@ -4,11 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-wrap container">
+            <nav class="navigation">
+                <a class="logo" href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                <ul class="navigation-list">
+                   <li class="navigation-item">
+                       <a class="navigation-link" href="index.html">Main page</a>
+                   </li>
+                   <li class="navigation-item">
+                       <a class="navigation-link" href="index.html">Benefits</a>
+                   </li>
+                   <li class="navigation-item">
+                       <a class="navigation-link" href="index.html">Advantages</a>
+                   </li>
+                   <li class="navigation-item">
+                       <a class="navigation-link" href="index.html">Reviews</a>
+                   </li>
+                   <li class="navigation-item">
+                       <a class="navigation-link" href="index.html">Contacts</a>
+                   </li>
+                   <li class="navigation-item">
+                       <a class="navigation-link" href="index.html">Order</a>
+                   </li>
+                </ul>
+               </nav>
+               <ul class="language">
+                   <li class="language-item">
+                       <a class="language-link" href="index.html">Ua</a>
+                   </li>
+                   <li class="language-item">
+                       <a class="language-link" href="index.html">Eng</a>
+                   </li>
+               </ul>
+        </div>
+    </header>
+    <main>
+      <section class="main-page">
+        <div class="container">
+            <div class="ligo-div">
+                <img src="./img/logo.png" alt="logo">
+                <h3 class="third-title">С&R</h3>
+            </div>
+          <h1>ColoRawe</h1>
+          <h2>Your dream Nike</h2>
+          <p>On this site you can find custom Nike sneakers of your dreams. The original company caт`t create such beautiful sneakers as we do. Good luck finding your way in the world of custom sneakers.</p>
+            <div class="button-div">
+             <button class="main-btn">Buy my Nike</button>
+            </div>
+        </div>
+      </section> 
+      
+      <section class="benefits">
+        <div class="container">
+            <ul class="benefits-list">
+                <li class="benefits-item">
+                    <p class="benefits-text">Premium Quality</p>
+                    <img class="benefits-img" src="./img/stars.png" alt="stars">
+                </li>
+                <li class="benefits-item">
+                    <img class="benefits-img" src="./img/paints.png" alt="paints">
+                    <p class="benefits-text">Indelible paint</p>
+                </li>
+                <li class="benefits-item">
+                    <p class="benefits-img" class="benefits-text">Fast shipping</p>
+                    <img src="./img/car.png" alt="car">
+                </li>
+            </ul>
+        </div>
+      </section>
+      <section class="reviews">
+         <din class="container">
+            <h3 class="reviews-title">Reviews</h3>
+            <ul class="reviews-list">
+                <li class="reviews-item">
+                    <div class="cards">
+                        <h5 class="reviews-title-first">Sneakers are very comfortable and well painted, nothing has worn off in a year.</h5>
+                        <p class="reviews-text-first">25.11</p>
+                            <img src="./img/first-men.png" alt="men">
+                        <div class="person">
+                            <h6 class="reviews-title-socond">John Teylor</h6>
+                            <p class="reviews-text-socond">With us from 2018</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews-item">
+                    <div class="cards">
+                        <h5 class="reviews-title-first">I'm very happy with this color scheme. They match all my clothes.</h5>
+                        <p class="reviews-text-first">05.01</p>
+                            <img src="./img/women.png" alt="women">
+                        <div class="person">
+                            <h6 class="reviews-title-socond">Elizabeth Garsia</h6>
+                            <p class="reviews-text-socond">With us from 2020</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="reviews-item">
+                    <div class="cards">
+                        <h5 class="reviews-title-first">Just right if you need to go to a party. I use them actively, the paint is super.</h5>
+                        <p class="reviews-text-first">18.06</p>
+                            <img src="./img/second-men.png" alt="boy">
+                        <div class="person">
+                            <h6 class="reviews-title-socond">Tom Maquare</h6>
+                            <p class="reviews-text-socond">With us from 2019</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+         </din>
+      </section>
+     
+      <section class="order">
+        <div class="container">
+            <h3 class="order-title">Order</h3>
+            <form class="form">
+                <div class="order-div">
+                    <input class="form-input" type="text" placeholder="Write your email">
+                    <input class="form-input" type="text" placeholder="Your Country">
+                    <input class="form-input" type="text" placeholder="Your City">
+                    <input class="form-input" type="text" placeholder="Your Adress">
+                </div>
+                <div class="box">
+                    <button class="btn" type="submit">Order my Nike</button>
+                  </div>
+            </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <p class="footer-text">Have a question?</p>
+                    <a class="footer-link" href="ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a>
+                </li>
+                <li class="footer-item">
+                    <p class="footer-text">Have a proposal for cooperation?</p>
+                    <a class="footer-link" href="ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a>
+                </li>
+                <li class="footer-item">
+                    <p class="footer-text">Advertising questions?</p>
+                    <a class="footer-link" href=ColoRawe_Advertising@gmail.com>ColoRawe_Advertising@gmail.com</a>
+                </li>
+            </ul>
+            <p class="footer-text">2022 ColoRawe @All rights reserved</p>
+            <p class="footer-text"></p>United States</p>
+            <div class="ligo-div">
+                <img src="./img/logo.png" alt="logo">
+                <h3 class="third-title">С&R</h3>
+            </div>
+        </div>
+      </footer>
+    </main>
 </body>
 </html>
