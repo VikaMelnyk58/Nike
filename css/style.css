@@ -1,16 +1,62 @@
     /* font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal; */
 
-    /* font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal; */
+     font-family: "Roboto", sans-serif;
  
-    /* font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal; */
+     font-family: "PT Serif", serif;
  
-    /* font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;  */
+     font-family: "Playfair Display", serif; */
+    :root{
+        --header-background: rgba(1, 45, 99, 1);
+        --main-text: rgba(255, 255, 255, 1);
+        --second-text: rgba(220, 220, 220, 1);
+        --button-border: rgba(142, 50, 198, 1);
+        --placeholder: rgba(149, 149, 149, 1);
+        --footer-line: rgba(155, 155, 155, 1);
+    }
+    .header{
+        background-color: var(--header-background);
+        padding-top: 16px;
+        padding-bottom: 14px;
+    }
+    .logo{
+        /* margin-right: 152px; */
+    }
+    .navigation{
+        display: flex;
+    }
+    .navigation-list{
+        display: flex;
+    }
+    .navigation-item{
+        margin-right: 20px;
+        font-size: 24px;
+    }
+    .navigation-link{
+        color: var(--second-text);
+        
+    }
+    .navigation-link:hover,
+    .navigation-link:focus{
+    color: var(--main-text);
+    }
+    .language{
+        display: flex;
+        margin-left: 73px;
+        margin-right: 175px;
+        font-size: 24px;
+    }
+    .language-link{
+        color: var(--second-text);
+        margin-right: 20px;
+    }
+    .language:hover,
+    .language:focus{
+    color: var(--main-text);
+    }
+    .main-page{
+        padding-top: 94px;
+        padding-bottom: 183px;
+        background-image: url(/Nike/img/main.jpg);
+    }
+    
+
