@@ -12,6 +12,8 @@
         --button-border: rgba(142, 50, 198, 1);
         --placeholder: rgba(149, 149, 149, 1);
         --footer-line: rgba(155, 155, 155, 1);
+        --background-footer:rgba(2, 22, 53, 1);
+        --numbers-color: rgba(216, 216, 216, 1);
     }
     .header{
         background-color: var(--header-background);
@@ -35,7 +37,7 @@
     }
     .navigation-link:hover,
     .navigation-link:focus{
-    color: var(--main-text);
+     color: var(--main-text);
     }
     .language{
         display: flex;
@@ -45,9 +47,9 @@
         color: var(--second-text);
         margin-right: 20px;
     }
-    .language:hover,
-    .language:focus{
-    color: var(--main-text);
+    .language-link:hover,
+    .language-link:focus{
+     color: var(--main-text);
     }
     .main-page{
         padding-top: 94px;
@@ -62,23 +64,26 @@
         color: var(--main-text);
         font-family: "PT Serif", serif;
         margin-top: -20px;
-
+        font-weight: lighter;
     }
     .main-title{
         font-size: 144px;
         color: var(--main-text);
         font-family: "Playfair Display", serif;
+        font-weight: lighter;
     }
     .second-title{
         font-size: 72px;
         color: var(--main-text);
         font-family: "Playfair Display", serif;
+        font-weight: lighter;
     }
     .paragraph{
         font-size: 18px;
         color: var(--main-text);
         margin-bottom: 41px;
         margin-top: 12px;
+        font-weight: lighter;
     }
     .main-btn{
         width: 254px;
@@ -107,6 +112,7 @@
         font-size: 36px;
         color: var(--main-text);
         font-family: "Playfair Display", serif;
+        font-weight: lighter;
     }
     .benefits-item{
         margin-top: 25px;
@@ -124,10 +130,68 @@
     .reviews{
         padding-top: 25px;
         padding-bottom: 115px;
-        background-image: url(../img/background-two.jpg), url(../img/leaf.webp);
-        background-position: center, bottom left;
+        background-image: url(../img/leaf.webp), url(../img/background-two.jpg);
+        background-position: bottom left, center;
         background-repeat: no-repeat;
-        background-size: cover, 340px ;
+        background-size: 270px, cover;
+        border-top: 2px solid var(--main-text);
+    }
+    .reviews-title{
+        font-family: "Playfair Display", serif;
+        font-size: 48px;
+        text-align: center;
+        color: var(--main-text);
+        margin-bottom: 24px;
+        font-weight: lighter;
+    }
+    .cards-wrap{
+        display: flex;
+    }
+    .reviews-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .reviews-item{
+        padding-top: 49px;
+        padding-bottom: 29px;
+        width: 255px;
+        border-radius: 15px;
+    }
+    .reviews-item:nth-child(1){
+        background-image: linear-gradient(137deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
+        box-shadow: 0px 14px 0px -5px #7B54B2, 0px 30px 0px -13px #533978;
+    }
+    .reviews-item:nth-child(2){
+        background-image: linear-gradient(137deg, #FF68B4 0%, #FF45E1 26.04%, #CE3AFF 62.84%, #8961FF 100%);
+        box-shadow: 0px 14px 0px -5px #9159B1, 0px 30px 0px -13px #61337C;
+    }
+    .reviews-item:nth-child(3){
+        background-image: linear-gradient(143deg, #FFE128 0%, #FF9B5C 30.21%, #FF8381 63.29%, #FF5489 100%);
+        box-shadow: 0px 14px 0px -5px #B95A4C, 0px 30px 0px -13px #732F26;
+    }
+    .reviews-title-first{
+        color: var(--main-text);
+        font-size: 24px;
+        margin-left: 13px;
+        font-weight: lighter;
+    }
+    .reviews-text-first{
+        color: var(--numbers-color);
+        margin-top: 8px;
+        margin-bottom: 47px;
+        margin-left: 13px;
+    }
+    .reviews-title-socond{
+        color: var(--main-text);
+        margin-left: 5px;
+    }
+    .reviews-text-socond{
+        color: var(--numbers-color);
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .reviews-photo{
+        margin-left: 13px;
     }
     .order{
         padding-top: 20px;
@@ -143,6 +207,7 @@
         color: var(--main-text);
         text-align: center;
         margin-bottom: 30px;
+        font-weight: lighter;
     }
     .form-input-one{
         display: block;
@@ -150,6 +215,14 @@
         height: 60px;
         border-radius: 50px;
         margin-bottom: 19px;
+        font-size: 28px;
+        padding-left: 25px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .form-input{
         display: block;
@@ -157,6 +230,8 @@
         width: 580px;
         height: 50px;
         margin-bottom: 19px;
+        font-size: 28px;
+        padding-left: 25px;
     }
     .btn{
         width: 254px;
@@ -167,5 +242,51 @@
         font-size: 24px;
         color: var(--main-text);
     }
+    .footer{
+        padding-top: 45px;
+        padding-bottom: 50px;
+        background-color: var(--background-footer);
+    }
+    .first-div{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--footer-line);
+    }
+    .footer-text{
+        color: var(--main-text);
+        font-size: 24px;
+        font-weight: lighter;
+    }
+    .question-item{
+        margin-bottom: 10px;
+    }
+    .link-item{
+        margin-bottom: 10px;
+    }
+    .footer-link{
+        color: var(--main-text);
+        font-size: 24px;
+        font-weight: lighter;
+    }
+    .second-div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-paragraph{
+        color: var(--main-text);
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    .paragrafe-div{
+        margin-top: 24px;
+    }
+    .third-title-footer{
+        color: var(--main-text);
+        font-size: 24px;
+        font-family: "PT Serif", serif;
+        margin-top: -10px;
+        font-weight: lighter;
+    }
+
 
 
