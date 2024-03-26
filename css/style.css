@@ -151,7 +151,7 @@
     }
     .reviews-list{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .reviews-item{
         padding-top: 49px;
@@ -270,6 +270,10 @@
         color: var(--main-text);
         font-size: 24px;
         font-weight: lighter;
+    }
+    .footer-link:hover,
+    .footer-link:focus{
+        color: var(--button-border);
     }
     .second-div{
         display: flex;
