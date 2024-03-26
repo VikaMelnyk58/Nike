@@ -93,7 +93,9 @@
         border-radius: 10px;
         font-size: 24px;
         color: var(--main-text);
+        cursor: pointer;
     }
+    
     .benefits{
         padding-top: 105px;
         padding-bottom: 105px;
@@ -241,6 +243,7 @@
         border-radius: 10px;
         font-size: 24px;
         color: var(--main-text);
+        cursor: pointer;
     }
     .footer{
         padding-top: 45px;
